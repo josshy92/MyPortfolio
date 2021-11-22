@@ -27,7 +27,6 @@
     display: flex;
     justify-content: center;
     background-color: rgb(255,255,255);
-    /* border: double; */
     background-image: linear-gradient(rgba(197, 196, 197, 0.3) 0%,
     rgba(85, 161, 184, 0.466) 100%);  
     font-size: 16px;
@@ -60,6 +59,14 @@
   .textCenter {
     text-align: center;
   }
+#blurb {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 1rem;
+
+}
 
   #projects {
     color: rgb(158, 173, 186);
@@ -124,41 +131,68 @@ h1,
 h2,
 h3,
 h4 {
-    font-size: 30px;
+  font-size: 30px;
 }
 p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 li {
-    font-size: 16px;
-    color: black;
+  font-size: 16px;
+  color: black;
 }
 
 #contact {
   margin-top: 10rem;
 }
 
-footer{
-  margin-top: 1rem;
-    text-align: center;
-    font-size: 20px;
-    text-shadow: 1px 1px #13293d;
-    color: gray;
+#resume {
+  margin-top: 10rem;
 }
 
- /* Large smartphones*/
-  @media screen and (max-width: 768px) {
-    main,
-    header,
-    nav {
-      flex-direction: column;
-    }
+#email {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+footer{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px #13293d;
+  color: gray;
+}
 
-    h1,
-    h2,
-    h3,
-    footer {
+@media screen and (max-width: 992px) {
+  
+  div,
+  p,
+  section,
+  h1 {
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+  #contact{
+    display: block;
+  }
+}
+
+/* Large smartphones*/
+@media screen and (max-width: 768px) {
+  main,
+  header,
+  nav {
+    flex-direction: column;
+  }
+  
+  h1,
+  h2,
+  h3,
+  footer {
         font-size: 20px;
 
     }
@@ -181,24 +215,25 @@ footer{
       }
     }
 
-    @media screen and (max-width: 992px) {
-      
-      div {
-        display: contents;
-        flex-direction: column;
-        align-items: center;
-      }
-      .contactMe {
-        flex-wrap: nowrap;
-      }
-    }
     
    
 
     
-    /* Small smartphones - image placeholders change color */
-    @media screen and (max-width: 576px) {
-      body {
-        background-color: #000000;
-      }
+    /* Small smartphones */
+    @media screen and (max-width: 576px)  {
+    div,
+    p,
+    section,
+    h1 {
+      display: contents;
+      flex-direction: column;
+      align-items: center;
     }
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+    #contact{
+      display: block;
+    }
+  }
