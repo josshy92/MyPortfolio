@@ -101,6 +101,7 @@
   padding-left: 1rem;
 }
 
+
 .fromLeft {
   margin-left: 1rem;
 }
@@ -127,6 +128,17 @@
 
 div a {
    cursor:url(https://img.icons8.com/ultraviolet/50/000000/joy-con.png), auto;
+}
+
+.shorten1 {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+}
+.shorten2 {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
 }
 
 h1,
